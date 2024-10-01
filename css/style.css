@@ -370,6 +370,23 @@ section.hero {
 
 }
 
+@media (max-width: 480px) {
+
+  .hero .search {
+    width: 100%;
+  }
+
+  .hero form {
+    width: 100%;
+  }
+
+  .hero .btn-search {
+    width: 100%;
+  }
+
+
+}
+
 /* Categorias */
 
 section.categorias {
@@ -783,6 +800,42 @@ section.problemas-relatados .problema .problema-info h3 {
   }
 }
 
+@media (max-width: 480px) {
+
+  .problema-info h3 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .problema-info p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: left;
+  }
+
+  .problema-label-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .problema-label img {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .problema-label span {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  data-status {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+
+}
+
 /* Nossos Números */
 
 section.numeros {
@@ -874,9 +927,34 @@ section.numeros h2 {
 
 /* Estilos responsivos */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .dados {
     flex-direction: row;
+    gap: 1.6rem;
+    height: auto;
+    padding: 2.4rem;
+    max-width: 100%;
+  }
+
+  .dados-info {
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .dados-info p {
+    text-align: center;
+    margin-top: -16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .dados {
+    flex-direction: column;
     gap: 1.6rem;
     height: auto;
     padding: 2.4rem;
@@ -1046,6 +1124,30 @@ footer .redes-sociais ul li img:hover {
 .copy a:hover {
   text-decoration: underline;
   transition: all .5s ease;
+}
+
+/* Estilos responsivos */
+
+@media (max-width: 600px) { 
+  .copy {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .copy span {  
+    font-size: 1.4rem;
+    line-height: 150%; /* 24px */
+  }
+
+  .copy p {  
+    font-size: 1.4rem;
+    line-height: 150%; /* 24px */
+  }
+
+  .copy a {  
+    font-size: 1.4rem;
+    line-height: 150%; /* 24px */
+  }
 }
 
 
