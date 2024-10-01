@@ -787,10 +787,22 @@ section.problemas-relatados .problema .problema-info h3 {
 
   }
 
-  .problemas-relatados .problema-info h3 {
-    font-size: 1.6rem;
+  .problemas-relatados .problema .problema-info {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  section.problemas-relatados .problema .problema-info h3 {
+    font-size: 1.8rem;
     line-height: 2.4rem;
   } 
+
+  section.problemas-relatados .problema .problema-info p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: left;
+  }
 
   .problemas-relatados .problema-label {    
     display: flex;
@@ -798,11 +810,13 @@ section.problemas-relatados .problema .problema-info h3 {
     justify-content: center;
     gap: 1rem;
   }
+
+  
 }
 
 @media (max-width: 480px) {
 
-  .problema-info h3 {
+  section.problemas-relatados .problema .problema-info h3 {
     font-size: 1.4rem;
     line-height: 2rem;
   }
@@ -828,7 +842,7 @@ section.problemas-relatados .problema .problema-info h3 {
     line-height: 1.6rem;
   }
 
-  data-status {
+  .problema-label span data-status {
     font-size: 1.2rem;
     line-height: 1.6rem;
   }
