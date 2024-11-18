@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Reclame PG</title>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Lado Esquerdo -->
+    <div class="left">
+      <header>
+        <a href="./index.html">
+          <img src="../img/logo-reclamepg.svg" alt="Logo Reclame PG" class="logo">
+        </a>
+      </header>
+
+      <h1>Bem-vindo de volta</h1>
+      <p>Por favor, entre com suas credenciais para continuar</p>
+
+      <!-- Formulário de Login -->
+      <form class="login-form" action="/login" method="post">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+        <label for="senha">Senha</label">
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+        <div class="options">
+          <div class="remember-me">
+            <input type="checkbox" id="lembrar-senha" name="lembrar">
+            <label for="lembrar-senha">Lembrar senha</label>
+          </div>
+          <a href="/esqueceu-senha" class="esqueceu-senha">Esqueceu sua senha?</a>
+        </div>
+
+        <button type="submit" class="login-button">Entrar</button>
+        <button type="button" class="google-button"><img src="../img/login/icons/google-icon.svg" alt="Icone do Google">Entrar com o Google</button>
+      </form>
+
+      <p class="register-link">Ainda não possui uma conta? <a href="/pages/cadastro.html">Cadastre-se</a></p>
+    </div>
+
+    <!-- Separador -->
+    <div class="divider"></div>
+
+    <!-- Lado Direito -->
+    <div class="right">
+      <div class="illustration-container">
+        <img src="../img/login/ilustra/login-ilustra.svg" alt="Ilustração" class="illustration">
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/login.js" defer></script>
+</body>
+</html>
