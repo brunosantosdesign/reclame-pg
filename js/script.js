@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // const btnMobile = document.getElementById('btn-mobile');
 
 // function toggleMenu() {
@@ -71,3 +72,14 @@ cards.forEach(card => {
     alert(`Categoria selecionada: ${category}`);
   });
 });
+=======
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu() {
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+
+>>>>>>> 6920e4779c9f6c7de7bd69b0234cdcd7325654a8
