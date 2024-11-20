@@ -4,9 +4,10 @@ const nomeInput = document.getElementById('nome');
 const emailInput = document.getElementById('email');
 const senhaInput = document.getElementById('senha');
 const confirmarSenhaInput = document.getElementById('confirmar-senha');
-const cadastrarButton = document.querySelector(".cadastro-button")
-const googleButton = document.querySelector(".google-button")
-const loginLink = document.querySelector(".login-link a")
+const cadastrarButton = document.querySelector(".cadastro-button");
+const googleButton = document.querySelector(".google-button");
+const loginLink = document.querySelector(".login-link a");
+const feedback = document.getElementById("feedback");
 
 // Adiciona um evento de envio ao formulário
 form.addEventListener('submit', function(event) {
@@ -95,4 +96,56 @@ loginLink.addEventListener("click", function(event) {
   window.location.href = "/pages/login.html"; // Redireciona para a página de login
 });
 
+
+// Função para mostrar a mensagem de feedback
+function showFeedback(message, isSuccess) {
+  feedback.style.display = "block";
+  feedback.textContent = message;
+  feedback.className = "feedback"; // Reseta as classes
+
+  if (isSuccess) {
+    feedback.classList.add("success");
+  } else {
+    feedback.classList.add("error");
+  }
+}
+
+// 1. Função para validar o formulário de cadastro
+form.addEventListener("submit", function(event) {
+  event.preventDefault() // Previne o envio automático do formulário
+
+  // Verificar se todos os campos estão preenchidos
+  if (
+    nomeInput.value === "" ||
+    emailInput.value === "" ||
+    senhaInput.value === "" ||
+    confirmarSenhaInput.value === ""
+  ) {
+    showFeedback("Por favor, preencha todos os campos.", false)
+    return
+  }
+
+  // Verificar se a senha e a confirmação de senha coincidem
+  if (senhaInput.value !== confirmarSenhaInput.value) {
+    showFeedback("As senhas não coincidem.", false)
+    return;
+  }
+
+  // Exibe uma mensagem de sucesso
+  showFeedback("Cadastro realizado com sucesso!", true)
+
+  // Limpar os campos após o sucesso (opcional)
+  form.reset();
+});
+
+// 2. Função para o botão "Entrar com o Google"
+googleButton.addEventListener("click", function() {
+  showFeedback("Função de login com o Google em desenvolvimento.", false);
+});
+
+// 3. Redirecionamento para a página de login
+loginLink.addEventListener("click", function(event) {
+  event.preventDefault();
+  window.location.href = "/login";
+});
 
