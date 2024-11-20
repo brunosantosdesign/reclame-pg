@@ -80,7 +80,7 @@ form.addEventListener("submit", function(event) {
   }
 
   // Exibe uma mensagem de sucesso
-  alert("Cadastro realizado com sucesso!");
+  //alert("Cadastro realizado com sucesso!");
   // Aqui você pode adicionar o código para enviar o formulário a um servidor ou processá-lo conforme necessário
 });
 
@@ -95,7 +95,6 @@ loginLink.addEventListener("click", function(event) {
   event.preventDefault(); // Evita o comportamento padrão do link
   window.location.href = "/pages/login.html"; // Redireciona para a página de login
 });
-
 
 // Função para mostrar a mensagem de feedback
 function showFeedback(message, isSuccess) {
@@ -146,6 +145,6 @@ googleButton.addEventListener("click", function() {
 // 3. Redirecionamento para a página de login
 loginLink.addEventListener("click", function(event) {
   event.preventDefault();
-  window.location.href = "/login";
+  window.location.href = "/pages/login.html"
 });
 

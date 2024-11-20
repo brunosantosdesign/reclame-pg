@@ -226,15 +226,15 @@ p {
 .feedback {
   margin-top: 10px;
   font-size: 0.9em;
-  display: none; /* Começa oculto */
+  display: none;
 }
 
 .feedback.success {
-  color: green;
+  color: #00A651;
 }
 
 .feedback.error {
-  color: red;
+  color: #ED1C24;
 }
 
 
