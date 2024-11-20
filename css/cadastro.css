@@ -223,6 +223,20 @@ p {
   transition: all .5s ease;
 }
 
+.feedback {
+  margin-top: 10px;
+  font-size: 0.9em;
+  display: none; /* Começa oculto */
+}
+
+.feedback.success {
+  color: green;
+}
+
+.feedback.error {
+  color: red;
+}
+
 
 /* Separador */
 .divider {
