@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Usuário - Reclame PG</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+      <div class="logo">
+          <a href="../pages/index.html"><img src="../img/logo-reclamepg.svg" alt="Logo Reclame PG"></a>
+      </div>
+      <div class="search-bar">
+        <form action="#">
+          <input type="text" placeholder="Pesquisar">
+          <button type="submit"><img src="../img/dashboard/icons/icon-busca.png" alt="Icone de Pesquisa"></button>
+        </form> 
+      </div>
+      <div class="user-section">
+          <img src="/img/dashboard/icons/icon-notificacao.svg" alt="">
+          <div class="user-dropdown">
+              <img src="../img/dashboard/imagens/imagem-perfil.jpg" alt="Foto do Usuário" class="user-photo">
+              <span class="user-name">Bruno Santos</span>
+              <span class="dropdown-icon"><img src="../img/dashboard/icons/icon-dropdown.svg" alt=""></span>
+              <!-- Dropdown Menu -->
+              <div class="dropdown-menu">
+                  <a href="#">Perfil</a>
+                  <a href="#">Configurações</a>
+                  <a href="#">Sair</a>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <div class="line"></div>
+
+  <!-- Navbar -->
+  <nav>
+      <ul class="nav-links">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Minhas Reclamações</a></li>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Configurações</a></li>
+          <li><a href="#">Contato</a></li>
+      </ul>
+      <button class="new-complaint-btn">
+          <img src="../img/dashboard/icons/icon-nova-reclamacao.svg" alt="">Nova Reclamação
+      </button>
+  </nav>
+
+  <div class="line"></div>
+
+  <!-- Main Section -->
+  <main>
+    <!-- Boas-vindas -->
+    <section class="welcome-section">
+      <div class="welcome-text">
+        <h2>Bem-Vindo, Bruno! 👋</h2>
+        <p>
+          Aqui você pode registrar, acompanhar e solucionar problemas da sua cidade. 
+          Estamos prontos para ajudar a melhorar a cidade juntos!
+        </p>
+      </div>
+      <div class="welcome-image">
+        <img src="../img/dashboard/ilustra/ilustra-boas-vindas.svg" alt="Ilustração de monitor com personagem">
+      </div>
+    </section>
+
+    <!-- Menu de Acesso Rápido -->
+    <section class="quick-access">
+      <h2>Acesso Rápido</h2>
+      <div class="quick-cards">
+        <div class="quick-card">
+          <img src="../img/dashboard/ilustra/ilustra-nova-reclamacao.svg" alt="Ícone Nova Reclamação">
+          <h3>Nova Reclamação</h3>
+        </div>
+        <div class="quick-card">
+          <img src="/img/dashboard/ilustra/ilustra-ver-reclamacoes.svg" alt="Ícone Ver Reclamações">
+          <h3>Ver Reclamações Recentes</h3>
+        </div>
+        <div class="quick-card">
+          <img src="/img/dashboard/ilustra/ilustra-acompanhar-reclamacoes.svg" alt="Ícone Acompanhar Reclamações">
+          <h3>Acompanhar Minhas Reclamações</h3>
+        </div>
+        <div class="quick-card">
+          <img src="/img/dashboard/ilustra/ilustra-notificacoes.svg" alt="Ícone Notificações">
+          <h3>Notificações</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <script src="script.js"></script> <!-- Inclua o JavaScript aqui -->
+</body>
+</html>
