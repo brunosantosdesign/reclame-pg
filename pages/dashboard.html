@@ -12,6 +12,7 @@
       <div class="logo">
           <a href="../pages/index.html"><img src="../img/logo-reclamepg.svg" alt="Logo Reclame PG"></a>
       </div>
+      
       <div class="search-bar">
         <form action="#">
           <input type="text" placeholder="Pesquisar">
@@ -20,24 +21,29 @@
       </div>
       <div class="user-section">
           <img src="/img/dashboard/icons/icon-notificacao.svg" alt="" class="notification-icon">
-          <div class="user-dropdown">
+          <div class="user-dropdown" id="userDropdown">
               <img src="../img/dashboard/imagens/imagem-perfil.jpg" alt="Foto do Usuário" class="user-photo">
               <span class="user-name">Bruno Santos</span>
-              <span class="dropdown-icon"><img src="../img/dashboard/icons/icon-dropdown.svg" alt=""></span>
-              <!-- Dropdown Menu -->
-              <!-- <div class="dropdown-menu">
+              <div class="dropdown">
+                <button class="dropdown-toggle" id="userToggle"><img src="../img/dashboard/icons/icon-dropdown.svg" alt=""></button>
+                <div class="dropdown-menu" id="dropdownMenu">
                   <a href="#">Perfil</a>
                   <a href="#">Configurações</a>
                   <a href="#">Sair</a>
-              </div> -->
+                </div>
+              </div>
           </div>
       </div>
+      <!-- Menu Mobile Button -->
+      <button class="menu-toggle" id="menuToggle">
+          <img src="../img/dashboard/icons/menu-mobile.svg" alt="Menu">
+      </button>
   </header>
 
   <div class="line"></div>
 
-  <!-- Navbar -->
-  <nav>
+  <!-- Navbar (Mobile hidden) -->
+  <nav id="navLinks">
       <ul class="nav-links">
           <li><a href="#">Início</a></li>
           <li><a href="#">Minhas Reclamações</a></li>
@@ -92,6 +98,6 @@
     </section>
   </main>
 
-    <script src="script.js"></script> <!-- Inclua o JavaScript aqui -->
+    <script src="../js/dashboard.js"></script> <!-- Inclua o JavaScript aqui -->
 </body>
 </html>
