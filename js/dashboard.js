@@ -24,3 +24,52 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// Botão "Nova Reclamação" (Navlinks e Acesso Rápido)
+const novaReclamacaoBtns = document.querySelectorAll(".nova-reclamacao-btn")
+
+novaReclamacaoBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // Pode ser um link para uma nova página:
+    // window.location.href = 'nova-reclamacao.html';
+
+    // Ou abrir um modal (se estiver usando modais):
+    // document.getElementById('modalNovaReclamacao').classList.add('open');
+
+    console.log('Botão "Nova Reclamação" clicado!')
+  })
+})
+
+// Botão "Sair" (Menu Dropdown)
+const botaoSair = document.getElementById("logout-btn")
+
+botaoSair.addEventListener("click", () => {
+  // Aqui você pode limpar os dados de autenticação do usuário
+  // localStorage.removeItem('token'); // Exemplo para JWT
+
+  // Redirecionar para a página de login
+  window.location.href = "/pages/login.html"
+})
+
+// Notificações
+const notificacaoBtn = document.getElementById("notificacao-btn")
+const dropdownNotificacoes = document.querySelector(".dropdown-notificacoes")
+
+notificacaoBtn.addEventListener("click", () => {
+  dropdownNotificacoes.classList.toggle("show")
+})
+
+// Fecha se clicar fora
+document.addEventListener("click", (e) => {
+  if (
+    !notificacaoBtn.contains(e.target) &&
+    !dropdownNotificacoes.contains(e.target)
+  ) {
+    dropdownNotificacoes.classList.remove("show")
+  }
+})
+
+
+
+
+
