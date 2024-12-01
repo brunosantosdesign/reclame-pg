@@ -544,11 +544,46 @@ nav {
 }
 
 /* Categoria selecionada */
-.categoria-card.active {
+.categoria-card.infraestrutura.active {
   border-width: 4px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  border-color: #007BFF;
-  background-color: #e7f1ff;
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+  border-color: #F5821F;
+  background: rgba(245, 130, 31, 0.20);
+}
+
+.categoria-card.servicos-publicos.active {
+  border-width: 3px;
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+  border-color: #9D0A0E;
+  background: rgba(157, 10, 14, 0.20);
+}
+
+.categoria-card.saude.active {
+  border-width: 3px;
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+  border-color: #00A651;
+  background: rgba(0, 166, 81, 0.20);
+}
+
+.categoria-card.educacao.active {
+  border-width: 3px;
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+  border-color: #007DC6;
+  background: rgba(0, 125, 198, 0.20);
+}
+
+.categoria-card.seguranca.active {
+  border-width: 3px;
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+  border-color: #003975;
+  background: rgba(0, 57, 117, 0.20);
+}
+
+.categoria-card.transporte.active {
+  border-width: 3px;
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+  border-color: #F99D1B;
+  background: rgba(249, 157, 27, 0.20);
 }
 
 .categoria-card img {

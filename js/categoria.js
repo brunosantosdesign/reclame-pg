@@ -1,3 +1,46 @@
+// TELA CATEGORIA
+document.addEventListener("DOMContentLoaded", () => {
+  const categoriaCards = document.querySelectorAll(".categoria-card")
+  const etapas = document.querySelectorAll(".etapa")
+  const btnAvancar = document.getElementById("btn-avancar")
+  const btnVoltar = document.getElementById("btn-voltar")
+  let etapaAtual = 0
+
+  // Função para selecionar a categoria
+  categoriaCards.forEach((card) => {
+    card.addEventListener("click", () => {
+      categoriaCards.forEach((c) => c.classList.remove("active"))
+      card.classList.add("active")
+    })
+  })
+
+  // Função para avançar a etapa
+  btnAvancar.addEventListener("click", () => {
+    if (etapaAtual < etapas.length - 1) {
+      etapas[etapaAtual].classList.remove("active")
+      etapaAtual++
+      etapas[etapaAtual].classList.add("active")
+    }
+  })
+
+  // Função para voltar a etapa
+  btnVoltar.addEventListener("click", () => {
+    if (etapaAtual > 0) {
+      etapas[etapaAtual].classList.remove("active")
+      etapaAtual--
+      etapas[etapaAtual].classList.add("active")
+    }
+  })
+})
+
+document.getElementById("btn-avancar").addEventListener("click", function () {
+  window.location.href = "descricao.html" // Caminho para a próxima tela
+})
+
+document.getElementById("btn-voltar").addEventListener("click", function () {
+  window.location.href = "dashboard.html" // Caminho para a tela anterior
+})
+
 // Menu mobile toggle
 const menuToggle = document.getElementById("menuToggle")
 const nav = document.getElementById("navLinks")
@@ -6,24 +49,23 @@ menuToggle.addEventListener("click", () => {
   nav.classList.toggle("show") // Mostra/esconde o menu
 })
 
-
 // Função para controlar o dropdown do usuário
-document.addEventListener("DOMContentLoaded", function() {
-    const dropdownToggle = document.getElementById("userToggle");
-    const dropdownMenu = document.getElementById("dropdownMenu");
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownToggle = document.getElementById("userToggle")
+  const dropdownMenu = document.getElementById("dropdownMenu")
 
-    dropdownToggle.addEventListener("click", function(event) {
-        event.stopPropagation(); // Evita que o clique propague para o body
-        dropdownMenu.classList.toggle("show");
-    });
+  dropdownToggle.addEventListener("click", function (event) {
+    event.stopPropagation() // Evita que o clique propague para o body
+    dropdownMenu.classList.toggle("show")
+  })
 
-    // Fecha o dropdown se clicar fora dele
-    document.addEventListener("click", function(event) {
-        if (!dropdownToggle.contains(event.target)) {
-            dropdownMenu.classList.remove("show");
-        }
-    });
-});
+  // Fecha o dropdown se clicar fora dele
+  document.addEventListener("click", function (event) {
+    if (!dropdownToggle.contains(event.target)) {
+      dropdownMenu.classList.remove("show")
+    }
+  })
+})
 
 // Botão "Nova Reclamação" (Navlinks e Acesso Rápido)
 const novaReclamacaoBtns = document.querySelectorAll(".nova-reclamacao-btn")
@@ -68,8 +110,3 @@ document.addEventListener("click", (e) => {
     dropdownNotificacoes.classList.remove("show")
   }
 })
-
-
-
-
-
