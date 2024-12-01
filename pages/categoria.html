@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Reclamação - Categoria - Reclame PG</title>
+    <link rel="stylesheet" href="../css/categoria.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+      <div class="logo">
+          <a href="../pages/index.html"><img src="../img/logo-reclamepg.svg" alt="Logo Reclame PG"></a>
+      </div>
+      
+      <!-- <div class="search-bar">
+        <form action="#">
+          <input type="text" placeholder="Pesquisar">
+          <button type="submit"><img src="../img/dashboard/icons/icon-busca.svg" alt="Icone de Pesquisa"></button>
+        </form> 
+      </div> -->
+      <div class="user-section">
+          <img src="/img/categoria/icons/icon-notificacao.svg" alt="" class="notification-icon">
+          <div class="user-dropdown" id="userDropdown">
+              <img src="../img/categoria/imagens/imagem-perfil.jpg" alt="Foto do Usuário" class="user-photo">
+              <span class="user-name">Bruno Santos</span>
+              <div class="dropdown">
+                <button class="dropdown-toggle" id="userToggle"><img src="../img/categoria/icons/icon-dropdown.svg" alt=""></button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                  <a href="#">Perfil</a>
+                  <a href="#">Configurações</a>
+                  <a href="#" id="logout-btn">Sair</a>
+                </div>
+              </div>
+          </div>
+      </div>
+      <!-- Menu Mobile Button -->
+      <button class="menu-toggle" id="menuToggle">
+          <img src="../img/categoria/icons/menu-mobile.svg" alt="Menu">
+      </button>
+  </header>
+
+  <div class="line"></div>
+
+  <!-- Navbar (Mobile hidden) -->
+  <nav id="navLinks">
+      <ul class="nav-links">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Minhas Reclamações</a></li>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Configurações</a></li>
+          <li><a href="#">Contato</a></li>
+      </ul>
+      <button class="new-complaint-btn nova-reclamacao-btn">
+          <img src="../img/categoria/icons/icon-nova-reclamacao.svg" alt="">Nova Reclamação
+      </button>
+  </nav>
+
+  <div class="line"></div>
+
+  <!-- Main Section -->
+  <main class="nova-reclamacao">
+    <!-- Barra de progresso das etapas -->
+    <div class="etapas">
+      <div class="etapa active">
+        <span>1</span>
+        <p>Categoria</p>
+      </div>
+      <div class="etapa">
+        <span>2</span>
+        <p>Descrição</p>
+      </div>
+      <div class="etapa">
+        <span>3</span>
+        <p>Localização</p>
+      </div>
+      <div class="etapa">
+        <span>4</span>
+        <p>Anexos</p>
+      </div>
+      <div class="etapa">
+        <span>5</span>
+        <p>Resumo</p>
+      </div>
+    </div>
+
+    <h1 class="title">Nova Reclamação</h1>
+    <p class="subtitle">Escolha a categoria que você quer fazer a reclamação</p>
+
+    <div class="categorias">
+      <button class="categoria-card infraestrutura" data-categoria="Infraestrutura">
+        <h3>Infraestrutura e Urbanismo</h3>
+        <img src="../img/categoria/icons/categoria/icon-infra.svg" alt="Icone de Infraestrutura e Urbanismo">
+      </button>
+      <button class="categoria-card servicos-publicos" data-categoria="Servicos Publicos">
+        <h3>Serviços Públicos</h3>
+        <img src="../img/categoria/icons/categoria/icon-servico.svg" alt="Icone de Serviços Públicos">
+      </button>
+      <button class="categoria-card saude" data-categoria="Saude">
+        <h3>Saúde</h3>
+        <img src="../img/categoria/icons/categoria/icon-saude.svg" alt="Icone de Saúde">
+      </button>
+      <button class="categoria-card educacao" data-categoria="Educacao">
+        <h3>Educação</h3>
+        <img src="../img/categoria/icons/categoria/icon-educacao.svg" alt="Icone de Educação">
+      </button>
+      <button class="categoria-card seguranca" data-categoria="Seguranca">
+        <h3>Segurança</h3>
+        <img src="../img/categoria/icons/categoria/icon-seguranca.svg" alt="Icone de Segurança">
+      </button>
+      <button class="categoria-card transporte" data-categoria="Transporte">
+        <h3>Transporte e Mobilidade Urbana</h3>
+        <img src="../img/categoria/icons/categoria/icon-transporte.svg" alt="Icone de Transporte e Mobilidade Urbana">
+      </button>
+    </div>
+
+    <div class="botoes-navegacao">
+      <button id="btn-voltar">Voltar</button>
+      <button id="btn-avancar">Avançar</button>
+    </div>
+
+  </main>
+
+  <script src="../js/categoria.js"></script> <!-- Inclua o JavaScript aqui -->
+</body>
+</html>
