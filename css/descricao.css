@@ -697,7 +697,35 @@ input#data-ocorrencia::placeholder, input#hora-ocorrencia::placeholder {
   }
 
   /* FORM DESCRIÇÃO */
-  
+  .form-container {
+    /* padding: 0 16px; */
+    
+    /* width: 100%; */
+    margin: 0 24px;
+  }
+
+  #descricao-form {
+    padding: 24px 32px;
+  }
+
+  .campo label {
+    font-size: 1.4rem;
+  }
+
+  .campo input,
+  .campo textarea {
+    font-size: 1.4rem; /* Ajusta o tamanho do texto */
+  }
+
+  .campo-data-hora {
+    flex-direction: column; /* Empilha os campos data e hora */
+  }
+
+  .campo-data-hora .campo {
+    width: 100%; /* Largura total para cada campo */
+  }
+
+
 
   .botoes-navegacao {
     padding: 0 24px; /* Reduz padding lateral */
@@ -773,6 +801,26 @@ input#data-ocorrencia::placeholder, input#hora-ocorrencia::placeholder {
   .title {
     padding-top: 40px;
   }
+
+  /* FORM DESCRIÇÃO */
+  .form-container {
+    margin: 0 16px;
+  }
+
+  #descricao-form {
+    padding: 24px 16px;
+  }
+
+  .campo input,
+  .campo textarea {
+    font-size: 1.2rem; /* Texto mais compacto */
+    
+  }
+
+  .campo {
+    margin-bottom: 12px; /* Reduz o espaço entre os campos */
+  }
+
 
 
   .botoes-navegacao {
