@@ -1,10 +1,35 @@
+// TELA DESCRICAO
+document.getElementById("descricao-form").addEventListener("submit", function (event) {
+  event.preventDefault() // Evita o envio padrão do formulário
+
+  const titulo = document.getElementById("titulo-reclamacao").value.trim()
+  const descricao = document
+    .getElementById("descricao-reclamacao")
+    .value.trim()
+  const data = document.getElementById("data-ocorrencia").value
+  const hora = document.getElementById("hora-ocorrencia").value
+
+  if (!titulo || !descricao || !data || !hora) {
+    alert("Por favor, preencha todos os campos obrigatórios.")
+    return
+  }
+
+  // Dados para avançar para a próxima etapa (podem ser armazenados em um objeto)
+  const reclamacaoData = { titulo, descricao, data, hora }
+  console.log(reclamacaoData) // Debug: exibe os dados no console
+
+  // Redireciona para a próxima etapa (exemplo fictício)
+  window.location.href = "localizacao.html" // Altere para a rota real
+})
+
+
 // TELA CATEGORIA
 document.addEventListener("DOMContentLoaded", () => {
   const categoriaCards = document.querySelectorAll(".categoria-card")
   const etapas = document.querySelectorAll(".etapa")
   const btnAvancar = document.getElementById("btn-avancar")
   const btnVoltar = document.getElementById("btn-voltar")
-  let etapaAtual = 0
+  let etapaAtual = 1
 
   // Função para selecionar a categoria
   categoriaCards.forEach((card) => {
@@ -34,11 +59,11 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 document.getElementById("btn-avancar").addEventListener("click", function () {
-  window.location.href = "descricao.html" // Caminho para a próxima tela
+  window.location.href = "finalizar.html" // Caminho para a próxima tela
 })
 
 document.getElementById("btn-voltar").addEventListener("click", function () {
-  window.location.href = "dashboard.html" // Caminho para a tela anterior
+  window.location.href = "categoria.html" // Caminho para a tela anterior
 })
 
 // Menu mobile toggle

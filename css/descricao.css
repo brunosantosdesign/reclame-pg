@@ -353,9 +353,9 @@ nav {
   position: absolute;
   width: 100%;
   height: 4px;
-  background-color: var(--Tons-de-Cinza-Cinza-Fill, #D6E6EC);;
+  background-color: var(--Tons-de-Cinza-Cinza-Fill, #D6E6EC);
   top: 29px;
-  left: 50%;
+  left: 48%;
   z-index: -1;
   transform: translateX(5%);
 }
@@ -393,6 +393,8 @@ nav {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
+  width: 472px;
+  margin: 0 auto 32px auto;
 }
 
 /* Formulário Descrição */
@@ -441,6 +443,14 @@ form .campo label {
   line-height: 150%; /* 21px */
 }
 
+form #titulo-reclamacao, form #data-ocorrencia, form #hora-ocorrencia {
+  height: 48px;
+}
+
+form #descricao-reclamacao {
+  height: 188px;
+}
+
 form .campo input,
 form .campo textarea {
   width: 100%;
@@ -448,12 +458,17 @@ form .campo textarea {
   border: 1px solid #d3d3d3;
   border-radius: 6px;
   font-size: 1rem;
-
-  
-  
   border-radius: 4px;
   border: 1px solid var(--Principal-Azul02, #0054A6);
   background: var(--Auxiliares-Branco, #FFF);
+  font-family: Aller;
+  font-size: 16px;
+  color: var(--Principal-Azul02, #0054A6); /* Cor do texto */
+}
+
+form .campo textarea,
+form .campo input {
+  resize: vertical;
 }
 
 form .campo input::placeholder,
@@ -481,7 +496,23 @@ form .campo textarea:focus {
   flex: 1;
 }
 
+input#data-ocorrencia, input#hora-ocorrencia {
+  font-family: Aller;
+  font-size: 16px;
+  color: var(--Principal-Azul02, #0054A6); /* Cor do texto */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
 
+input#data-ocorrencia::placeholder, input#hora-ocorrencia::placeholder {
+  color: var(--Tons-de-Cinza-Cinza-Stroke, #CAD3DB);
+  font-family: Aller;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
 
 
 /* Botões de navegação */
@@ -492,6 +523,7 @@ form .campo textarea:focus {
   padding: 0 72px;
   padding-bottom: 75px;
   gap: 24px;
+  padding-top: 40px;
 }
 
 /* Botão voltar */
@@ -664,6 +696,8 @@ form .campo textarea:focus {
     flex: 1;
   }
 
+  /* FORM DESCRIÇÃO */
+  
 
   .botoes-navegacao {
     padding: 0 24px; /* Reduz padding lateral */
