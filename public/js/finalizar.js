@@ -19,7 +19,7 @@ document.getElementById("descricao-form").addEventListener("submit", function (e
   console.log(reclamacaoData) // Debug: exibe os dados no console
 
   // Redireciona para a próxima etapa (exemplo fictício)
-  window.location.href = "localizacao.html" // Altere para a rota real
+  window.location.href = "finalizar.html" // Altere para a rota real
 })
 
 
@@ -27,7 +27,7 @@ document.getElementById("descricao-form").addEventListener("submit", function (e
 document.addEventListener("DOMContentLoaded", () => {
   const categoriaCards = document.querySelectorAll(".categoria-card")
   const etapas = document.querySelectorAll(".etapa")
-  const btnAvancar = document.getElementById("btn-finalizar")
+  const btnAvancar = document.getElementById("btn-avancar")
   const btnVoltar = document.getElementById("btn-voltar")
   let etapaAtual = 1
 
@@ -115,7 +115,7 @@ botaoSair.addEventListener("click", () => {
   // localStorage.removeItem('token'); // Exemplo para JWT
 
   // Redirecionar para a página de login
-  window.location.href = "/pages/login.html"
+  window.location.href = "/login.html"
 })
 
 // Notificações

@@ -31,7 +31,7 @@ const novaReclamacaoBtns = document.querySelectorAll(".nova-reclamacao-btn")
 novaReclamacaoBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     // Pode ser um link para uma nova página:
-    window.location.href = '../pages/categoria.html';
+    window.location.href = '../categoria.html';
 
     // Ou abrir um modal (se estiver usando modais):
     // document.getElementById('modalNovaReclamacao').classList.add('open');
@@ -48,7 +48,7 @@ botaoSair.addEventListener("click", () => {
   // localStorage.removeItem('token'); // Exemplo para JWT
 
   // Redirecionar para a página de login
-  window.location.href = "/pages/login.html"
+  window.location.href = "/login.html"
 })
 
 // Notificações

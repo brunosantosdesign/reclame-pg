@@ -115,7 +115,7 @@ botaoSair.addEventListener("click", () => {
   // localStorage.removeItem('token'); // Exemplo para JWT
 
   // Redirecionar para a página de login
-  window.location.href = "/pages/login.html"
+  window.location.href = "/login.html"
 })
 
 // Notificações
