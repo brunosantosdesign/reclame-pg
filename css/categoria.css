@@ -355,7 +355,7 @@ nav {
   height: 4px;
   background-color: var(--Tons-de-Cinza-Cinza-Fill, #D6E6EC);;
   top: 29px;
-  left: 50%;
+  left: 48%;
   z-index: -1;
   transform: translateX(5%);
 }
