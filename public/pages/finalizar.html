@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Reclamação - Finalizar - Reclame PG</title>
+    <link rel="stylesheet" href="../css/finalizar.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+      <div class="logo">
+          <a href="../pages/index.html"><img src="../img/logo-reclamepg.svg" alt="Logo Reclame PG"></a>
+      </div>
+      
+      <!-- <div class="search-bar">
+        <form action="#">
+          <input type="text" placeholder="Pesquisar">
+          <button type="submit"><img src="../img/dashboard/icons/icon-busca.svg" alt="Icone de Pesquisa"></button>
+        </form> 
+      </div> -->
+      <div class="user-section">
+          <!-- <img src="/img/descricao/icons/icon-notificacao.svg" alt="" class="notification-icon"> -->
+          <div class="user-dropdown" id="userDropdown">
+              <img src="../img/descricao/imagens/imagem-perfil.jpg" alt="Foto do Usuário" class="user-photo">
+              <span class="user-name">Bruno Santos</span>
+              <div class="dropdown">
+                <button class="dropdown-toggle" id="userToggle"><img src="../img/descricao/icons/icon-dropdown.svg" alt=""></button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                  <a href="#">Perfil</a>
+                  <a href="#">Configurações</a>
+                  <a href="#" id="logout-btn">Sair</a>
+                </div>
+              </div>
+          </div>
+      </div>
+      <!-- Menu Mobile Button -->
+      <button class="menu-toggle" id="menuToggle">
+          <img src="../img/descricao/icons/menu-mobile.svg" alt="Menu">
+      </button>
+  </header>
+
+  <div class="line"></div>
+
+  <!-- Navbar (Mobile hidden) -->
+  <nav id="navLinks">
+      <ul class="nav-links">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Minhas Reclamações</a></li>
+          <li><a href="#">Ajuda</a></li>
+          <li><a href="#">Configurações</a></li>
+          <li><a href="#">Contato</a></li>
+      </ul>
+      <button class="new-complaint-btn nova-reclamacao-btn">
+          <img src="../img/descricao/icons/icon-nova-reclamacao.svg" alt="">Nova Reclamação
+      </button>
+  </nav>
+
+  <div class="line"></div>
+
+  <!-- Main Section -->
+  <main class="nova-reclamacao">
+    <!-- Barra de progresso das etapas -->
+    <div class="etapas">
+      <div class="etapa active" id="etapa1">
+        <span><img src="../img/descricao/icons/icon-check.svg" alt=""></span>
+        <p>Categoria</p>
+      </div>
+      <div class="etapa active" id="etapa2">
+        <span><img src="../img/descricao/icons/icon-check.svg" alt=""></span>
+        <p>Descrição</p>
+      </div>
+      <div class="etapa active" id="etapa3">
+        <span>3</span>
+        <p>Finalizar</p>
+      </div>
+      <!-- <div class="etapa" id="etapa4">
+        <span>4</span>
+        <p>Anexos</p>
+      </div>
+      <div class="etapa" id="etapa5">
+        <span>5</span>
+        <p>Resumo</p>
+      </div> -->
+    </div>
+
+    <h1 class="title">Sua reclamação foi registrada.</h1>
+    <p class="subtitle">Obrigado por contribuir para a melhoria da nossa cidade. Sua reclamação foi recebida e está sendo analisada. Em breve você poderá acompanhar o status da sua reclamação.</p>
+
+    <!-- Ilustração -->
+    <div class="ilustracao">
+      <img src="../img/finalizar/ilustra/ilustra-finalizar.svg" alt="Ilustração">
+    </div>
+
+
+    <div class="botoes-navegacao">
+      <button id="btn-voltar">Voltar</button>
+      <button id="btn-avancar">Finalizar</button>
+    </div>
+
+  </main>
+
+  <script src="../js/finalizar.js"></script> <!-- Inclua o JavaScript aqui -->
+</body>
+</html>
