@@ -10,7 +10,10 @@ function showFeedback(message, isSuccess) {
   feedback.textContent = message
   feedback.className = "feedback"
   feedback.classList.add(isSuccess ? "success" : "error")
+  
 }
+
+
 
 function validarCadastro(event) {
   event.preventDefault()
@@ -67,3 +70,6 @@ function validarCadastro(event) {
 }
 
 form.addEventListener("submit", validarCadastro)
+
+
+
