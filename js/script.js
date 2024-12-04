@@ -18,7 +18,7 @@ btnEntrar.addEventListener('click', () => {
 
 // Função para redirecionar o usuário para a página de cadastro
 btnCadastrar.addEventListener('click', () => {
-  alert("Página de cadastro em desenvolvimento") // Pode ser substituído pelo link da página de cadastro quando estiver pronto
+  window.location.href = "cadastro.html"; // Pode ser substituído pelo link da página de cadastro quando estiver pronto
 })
 
 
