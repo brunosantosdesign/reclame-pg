@@ -31,7 +31,7 @@ const novaReclamacaoBtns = document.querySelectorAll(".nova-reclamacao-btn")
 novaReclamacaoBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     // Pode ser um link para uma nova página:
-    // window.location.href = 'nova-reclamacao.html';
+    window.location.href = '../pages/categoria.html';
 
     // Ou abrir um modal (se estiver usando modais):
     // document.getElementById('modalNovaReclamacao').classList.add('open');
